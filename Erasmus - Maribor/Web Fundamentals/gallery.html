@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+    <!--    <script async src="functions.js"> </script> -->
+    <script defer src="functions.js"></script>
+    <style>
+        div.gallery {
+            border: 1px solid #ccc;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            text-align: center;
+            background-color: white;
+        }
+        
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+        
+        div.gallery img {
+            width: 400px;
+            height: 300px;
+        }
+        
+        div.desc {
+            padding: 10px;
+            text-align: center;
+            height: 100px;
+            color: white;
+        }
+        
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 100%;
+            background-color: #A0A0A0;
+        }
+        
+        th,
+        td {
+            border: 2px solid black;
+            padding: 12px;
+            text-align: left;
+            color: white;
+        }
+        
+        .offer {
+            margin-top: 15px;
+            /*float: right;*/
+            width: 55%;
+            height: 50px;
+            font-size: 13px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .active {
+            background-color: #666;
+            color: white;
+        }
+        
+        .grid {
+            display: grid;
+            background-color: #C0C0C0;
+            grid-template-rows: 1fr 1fr 1fr;
+            /* grid-template-rows: 1fr 1fr 1fr;*/
+        }
+        
+        .tablebuttons {
+            display: grid;
+            background-color: #C0C0C0;
+            grid-template-columns: 2fr 1fr;
+            /* grid-template-rows: 1fr 1fr 1fr;*/
+        }
+        
+        .buts {
+            margin-top: 5px;
+            /*float: right;*/
+            width: 42%;
+            height: 37px;
+            font-size: 14px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <title> Photos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- <script src="functions.js"> </script> -->
+    <div class="topnav">
+        <h2 class="nav-title"> Car Gallery </h2>
+        <a href="about.html">About</a>
+        <a class="active" href="gallery.html">Cars</a>
+        <a href="index.html">Home</a>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Sort cars by:</button>
+        <div class="dropdown-content">
+            <a id="c0" onclick="yearAscending()"> Year : Sort Ascending</a>
+            <a id="c1" onclick="yearDescending()">Year : Sort Descending</a>
+            <a id="c2" onclick="engineAscending()"> Engine : Sort Ascending</a>
+            <a id="c3" onclick="engineDescending()">Engine : Sort Descending</a>
+            <a id="c4" onclick="priceAscending()"> Price : Sort Ascending</a>
+            <a id="c5" onclick="priceDescending()">Price : Sort Descending</a>
+
+        </div>
+    </div>
+
+    <div id="container">
+    </div>
+
+    <!-- https://www.cartrade.com/volvo-cars/xc40/images
+
+</body>
+</html>

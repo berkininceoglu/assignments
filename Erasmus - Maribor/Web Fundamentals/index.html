@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<script src="index.js">
+</script>
+<style>
+    .button-image .button-center {
+        position: absolute;
+        top: 45%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: white;
+        color: black;
+        font-size: 16px;
+        padding: 12px 24px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .button-image .button-center a {
+        text-decoration: none;
+    }
+    
+    .button-image .button-center:hover {
+        background-color: red;
+    }
+    
+    .main-first {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    .main-left {
+        display: grid;
+        grid-template-rows: : 1fr 3fr;
+    }
+    
+    .main-right {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding-left: 10px;
+        padding-top: 53px;
+    }
+    
+    fieldset {
+        display: inline-grid;
+        grid-template-columns: auto auto auto auto;
+        margin-top: 16px;
+    }
+    
+    .offer-last {
+        padding-top: 30px;
+    }
+    
+    .submit {
+        padding-top: 100px;
+    }
+
+    .second-container{
+      display: grid;
+      grid-template-columns: auto auto; 
+    }
+</style>
+
+<body>
+    <title> Cars </title>
+    <div class="topnav">
+        <h2 class="nav-title">Car Gallery</h2>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Cars</a>
+        <a class="active" href="index.html">Home</a>
+    </div>
+
+    <!-- <div class="cont"> 
+  <div class="item1"> <h2> sol blok </h2></div>
+
+  <div=class="item2"> <h2> sag blok </h2></div>
+</div> -->
+
+    <div class="main-first">
+        <div class="main-left">
+            <img src="slogan.png" height="71.5" class=""> </img>
+
+            <div class="button-image">
+                <a href="gallery.html">
+                    <button class="button-center"> SHOP NOW </button>
+                </a>
+                <img src="data/mercedes-benz-g.jpeg" alt="merco" width="600" height="400" border='5'>
+            </div>
+        </div>
+
+        <div class="main-right">
+            <h3> Car Gallery offers consumers, car dealers, and other cooperation partners in the automotive, finance and insurance industries a comprehensive platform for trading cars online. The marketplace comprises used and new vehicles. <br> </h3>
+            <h3> Features such as the smart search supports users in finding the perfect car. In addition, the price and car valuation ensure full price transparency for buying or selling cars online. <br> </h3>
+            <h3> Furthermore, the independent platform provides a secure environment through dealer rankings provided by its users.
+In addition, Car Gallery cooperates with practically all automotive manufacturers, who recommend Car Gallery as platform for online sales to their certified dealers. </h3>
+        </div>
+    </div>
+
+    <div class="second-container">
+      <div>
+         <img src="ss.png" height="90px" width="750px" alt="brands">
+        <img src="ss2.png" height="90px" width="750px" alt="brands">
+      </div>
+    <div>
+    <form class="">
+        <fieldset>
+            <legend>Offer Form:</legend>
+
+            <div>
+                Name:
+                <br>
+                <input type="text" name="name">
+                <br> Email or Phone:
+                <br>
+                <input type="text" name="contact">
+                <br> Your Credit Score:
+                <br>
+                <input type="text" name="credit-score">
+                <br>
+            </div>
+            <div>
+
+                Brand:
+                <br>
+                <input type="text" name="brand">
+                <br> Model:
+                <br>
+                <input type="text" name="model">
+                <br> Year:
+                <br>
+                <input type="text" name="year" r>
+                <br>
+            </div>
+            <div class="offer-last">
+                <input type="radio" name="type" value="buy" checked> Buy
+                <br>
+                <input type="radio" name="type" value="sell"> Sell
+                <br>
+                <input type="radio" name="type" value="rent"> Rent
+                <br>
+            </div>
+            <div class="submit">
+                <button onclick="offer_alert()"> Submit </button>
+            </div>
+
+        </fieldset>
+    </form>
+  </div>
+
+  </div>
+    <!-- http://about.autoscout24.com/au-company/au-company-portrait.aspx -->
+
+</body>
+
+</html>
